@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — CoreTech</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',
+            dark: '#0f172a',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+
+  <div class="menu-btn">
+  <i class="fas fa-bars"></i>
+</div>
+
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-primary">CoreTech</h1>
+
+      <ul class="hidden md:flex gap-8 font-medium">
+        <li><a href="index.html" class="hover:text-primary">Home</a></li>
+        <li><a href="portfolio.html" class="hover:text-primary">Portfolio</a></li>
+        <li><a href="contact.html" class="text-primary font-semibold">Contact</a></li>
+        <li><a href="about.html" class="hover:text-primary">About</a></li>
+        <li><a href="services.html" class="hover:text-primary">Services</a></li>
+      </ul>
+
+      <button id="menu-btn" class="md:hidden text-2xl"> ☰</button>
+
+<div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-3 text-center">
+  <a href="index.html" class="block hover:text-primary">Home</a>
+  <a href="about.html" class="block hover:text-primary">About</a>
+  <a href="services.html" class="block hover:text-primary">Services</a>
+  <a href="portfolio.html" class="block hover:text-primary">Portfolio</a>
+  <a href="contact.html" class="block hover:text-primary">Contact</a>
+</div>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-bold mb-4 text-center text-dark">Contact Us</h2>
+    <p class="text-center text-gray-600 mb-10">We would love to hear from you! Fill the form below.</p>
+
+    <form id="contactForm" class="max-w-3xl mx-auto grid gap-4 bg-white shadow p-8 rounded-xl">
+
+      <input type="text" placeholder="Your Name" class="p-3 border rounded-lg" required />
+      <input type="email" placeholder="Email Address" class="p-3 border rounded-lg" required />
+      <input type="text" placeholder="Subject" class="p-3 border rounded-lg" />
+      <textarea placeholder="Your Message" class="p-3 border rounded-lg h-32" required></textarea>
+      <button class="bg-primary text-white py-3 rounded-lg hover:bg-blue-700 w-full">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-gray-600">
+    © 2025 CoreTech — Transforming Vision into Reality
+    <div class="mt-2 space-x-4">
+      <a href="#" class="hover:text-primary">Twitter</a>
+      <a href="#" class="hover:text-primary">LinkedIn</a>
+      <a href="#" class="hover:text-primary">GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>

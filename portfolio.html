@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - CoreTech Innovations</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+   
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+
+  <div class="menu-btn">
+  <i class="fas fa-bars"></i>
+</div>
+
+  <header class="bg-white shadow">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-blue-600">CoreTech</h1>
+      <ul class="flex gap-6">
+        <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="portfolio.html" class="text-blue-600 font-semibold">Portfolio</a></li>
+        <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+        <li><a href="about.html" class="hover:text-blue-600">About</a></li>
+        <li><a href="services.html" class="hover:text-blue-600">Services</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-2xl"> ☰</button>
+
+<div id="mobile-menu" class="hidden md:hidden bg-white p-4 space-y-3 text-center">
+  <a href="index.html" class="block hover:text-primary">Home</a>
+  <a href="about.html" class="block hover:text-primary">About</a>
+  <a href="services.html" class="block hover:text-primary">Services</a>
+  <a href="portfolio.html" class="block hover:text-primary">Portfolio</a>
+  <a href="contact.html" class="block hover:text-primary">Contact</a>
+</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-16 text-center bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+    <h2 class="text-4xl font-bold mb-4">Our Project Showcase</h2>
+    <p class="text-lg">From ideas to impactful digital experiences</p>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="py-14 container mx-auto px-5">
+    <h3 class="text-3xl font-semibold text-center mb-12 text-gray-700">Recent Projects</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Project Card 1 -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition-transform hover:-translate-y-1">
+        <img src="assets/1.jpg" alt="Project" class="rounded-lg mb-4">
+        <h4 class="text-xl font-bold mb-2">E‑Commerce Website</h4>
+        <p class="text-gray-600 text-sm">Modern online shopping platform with user‑friendly UI and secure checkout.</p>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition-transform hover:-translate-y-1">
+        <img src="assets/2.jpg" alt="Project" class="rounded-lg mb-4">
+        <h4 class="text-xl font-bold mb-2">AI Chatbot System</h4>
+        <p class="text-gray-600 text-sm">Smart AI‑powered chatbot for customer support and automation.</p>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition-transform hover:-translate-y-1">
+        <img src="assets/3.jpg" alt="Project" class="rounded-lg mb-4">
+        <h4 class="text-xl font-bold mb-2">Portfolio Website</h4>
+        <p class="text-gray-600 text-sm">Clean and minimal personal brand website for professionals.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p class="text-sm">© 2025 CoreTech Innovations | Transforming Vision into Reality</p>
+  </footer>
+
+</body>
+</html>
